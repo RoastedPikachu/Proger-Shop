@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link type="image/x-icon" href="favicon-2.ico" rel="icon">
+  <title>Интернет-магазин</title>
+</head>
+<body>
+  <header>
+    <p class="logo">Proger Shop</p>
+    <input type="search" placeholder="Поиск по сайту">
+    <span class="header-shop-cart">
+      <i class="fa-solid fa-cart-shopping"></i>
+      <p class="count-items">class="count-items">0</p>
+    </span>
+  </header>
+
+  <main class="items">
+  </main>
+
+  <aside class="shop-cart-block">
+    <span class="shop-cart-header-block">
+      <h4>Корзина</h4>
+      <i class="fa-solid fa-cart-shopping"></i>
+      <p class="count-items">0</p> 
+    </span>
+    <div class="titles">
+      <span>Товар</span>
+      <span>Цена</span>
+      <span>Количество</span>
+    </div>
+    <div id="shop-cart"></div>
+    <button class="delete-all" onclick="deleteAll()">Удалить всё <i class="fa-solid fa-trash-can"></i></button>
+    <button class="buy">Купить за <b>0.00</b></button>
+  </aside> 
+
+  <footer>Все права защищены &copy;</footer>
+
+  <script src="https://kit.fontawesome.com/1c33034429.js" crossorigin="anonymous"></script>
+  <script src="items.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
