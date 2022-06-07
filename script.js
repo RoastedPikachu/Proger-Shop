@@ -2,6 +2,7 @@ const btn = document.querySelector(".header-shop-cart");
 const cart = document.querySelector(".shop-cart-block");
 const main = document.querySelector("main");
 const countItems = document.querySelector(".count-items");
+const countItems2 = document.querySelector(".count-items-2");
 const buy = document.querySelector(".buy b");
 const input = document.querySelector(".count input");
 
@@ -72,9 +73,10 @@ function updateShopCart(){
         </div>
     </div>`;
     elementCount += el.count;
-    totalPrice += el.price * el.count;  
+    totalPrice += el.price * el.count;   
   });
   countItems.textContent = `(${elementCount})`;
+  countItems2.textContent = `(${elementCount})`;
   buy.textContent = rub.format(totalPrice.toFixed(2));
 }
 
